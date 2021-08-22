@@ -1,0 +1,21 @@
+.headingLevel3 {
+  font-family: serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: rgb(230, 225, 225);
+  background-color: rgba(43, 43, 43, 0.452);
+}
+
+.paragraph {
+  font-family: serif;
+  font-size: 2.25rem;
+  font-weight: normal;
+  color: rgb(230, 225, 225);
+  border: 2px solid black;
+  padding: 15px;
+  background-color: rgba(43, 43, 43, 0.452);
+}
+
+.container {
+  background-color: rgb(43, 43, 43);
+}

@@ -1,0 +1,19 @@
+.produto-topo1 {
+  width: 200;
+  height: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produto-topo2 {
+  width: 200;
+  height: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderLayoutContainer {
+  background-color: rgb(43, 43, 43);
+}

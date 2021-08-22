@@ -1,0 +1,300 @@
+{
+  "store.home": {
+    "blocks": [
+      "tab-layout",
+      "slider-layout#3",
+      "slider-layout#2",
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile",
+      "rich-text#novo",
+      "list-context.product-list",
+      "search-result-layout.customQuery#home"
+    ]
+  },
+// tab-layout - menu de abas
+    "tab-layout": {
+      "children": ["tab-list"]
+    },
+    "tab-list": {
+      "children": ["tab-list.item#1", "tab-list.item#2", "tab-list.item#3", "tab-list.item#4" ]
+    },
+    "tab-list.item#1": {
+    "props": {
+      "tabId": "promocao",
+      "label": "Promoção",
+      "defaultActiveTab": true
+      }
+    },
+    "tab-list.item#2": {
+      "props": {
+        "tabId": "corinthians",
+        "label": "Corinthians"
+      }
+    },
+    "tab-list.item#3": {
+      "props": {
+        "tabId": "palmeiras",
+        "label": "Palmeiras"
+      }
+    },
+    "tab-list.item#4": {
+      "props": {
+        "tabId": "divertidos",
+        "label": "Divertidos"
+      }
+    },
+      "responsive-layout.desktop#desktop": {
+      "children": ["rich-text#desktop" ]
+    },
+    "responsive-layout.mobile#mobile": {
+      "children": ["rich-text#mobile"]
+    },
+// slider-layout#3 - 2 banners principais  
+   "slider-layout#3": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": { "timeout": 7000 },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["image#cta1", "image#cta2"]
+  },
+  "image#cta1": {
+    "props": {
+        "blockClass": "cover",
+     "width": "100%",
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210819%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210819T222959Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0c9d2cc58c4890cb332a001e476ef35d001e67f88dbf6f294002a9c2cb8e5a4b"
+    }
+  },
+  "image#cta2": {
+    "props": {
+     "blockClass": "cover",
+     "width": "100%",
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210819%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210819T222959Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e330f9ca8163bdee45d3db539f0b7aa53e97b784ae1b20cc4d1e9e2648025960"
+    }
+  },
+    "slider-layout#teste": {
+      "props": {
+        "itemsPerPage": 8
+        }
+    },
+// slider layout#2
+  "slider-layout#2": {
+    "children": ["flex-layout.row#1", "flex-layout.row#2"],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 6000,
+        "stopOnHover": false
+      }
+    }
+  },
+// flex-layout#1
+  "flex-layout.row#1": {
+    "children": ["info-card#produto-destaque1", "flex-layout.col#1"]
+  },
+  "flex-layout.col#1": {
+    "children": [
+      "info-card#produto1",
+      "info-card#produto2"
+    ]
+  },
+  "info-card#produto-destaque1": {
+    "props": {
+      "isFullModeStyle": true,
+      "imageUrl": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1614364608-post-canalcorredores.jpg",
+      "headline": "Canal Corredores",
+      "callToActionText": "Ver Detalhes",
+      "textPosition": "right"
+    }
+  },
+  "info-card#produto1": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1629219624-POST.png",
+      "headline": "Etapa Aeronáutica",
+//   "subhead": "Coleção Forças Armadas",
+      "callToActionMode": "button",
+      "callToActionText": "Ver Detalhes",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#produto2": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1627507672-POST%20MEDALHA.png",
+      "headline": "Wood Sport",
+//   "subhead": "Festival",
+      "callToActionMode": "button",
+      "callToActionText": "Ver Detalhes",
+      "callToActionUrl": "/sale/d2",
+      "textAlignment": "center"
+    }
+  },
+// flex-layout#2
+  "flex-layout.row#2": {
+    "children": ["info-card#produto-destaque2", "flex-layout.col#2"]
+  },
+  "flex-layout.col#2": {
+    "children": [
+      "info-card#produto3",
+      "info-card#produto4"
+    ]
+  },
+  "info-card#produto-destaque2": {
+    "props": {
+      "isFullModeStyle": true,
+      "imageUrl": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1624896612-AGORA%20CORRE.png",
+      "headline": "Desafio Agora Corre",
+      "callToActionText": "Ver Detalhes",
+      "textPosition": "right"
+    }
+  },
+  "info-card#produto3": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1628715231-POST.png",
+      "headline": "King",
+//   "subhead": "Challenge",
+      "callToActionMode": "button",
+      "callToActionText": "Ver Detalhes",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#produto4": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1623790356-xtreme-post22.png",
+      "headline": "Extreme",
+//  "subhead": "Virtual Games",
+      "callToActionMode": "button",
+      "callToActionText": "Ver Detalhes",
+      "callToActionUrl": "/sale/d2",
+      "textAlignment": "center"
+    }
+  },
+
+// responsive layout para desktop e para mobile
+  "rich-text#desktop": {
+    "props": {
+      "text": "### Inovação de alta performance",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+      // ### Your Coffee, Your Way \n
+    }
+  },
+
+  "rich-text#mobile": {
+    "props": {
+      "text": " ### Inovação de alta performance",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+      // #### Your Coffee, Your Way \n
+    }
+  },
+  "rich-text#novo": {
+    "props": {
+      "text": "### *Conheça a coleção inteira abaixo...*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+// search-result - 8 items por página
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "queryField": "Kit UpMedal"
+      }
+  },
+  "blocks":["search-result-layout.desktop#lp", "search-result-layout.mobile"]
+  },
+  "search-result-layout.desktop#lp":{
+    "children": [
+
+      "search-content#lp"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "search-content#lp": {
+    "blocks": [
+      "gallery#lp", "not-found"
+    ]
+  },
+// product-summary --> informações sobre os produtos nas prateleiras
+
+  "product-summary.shelf#1": {
+    "children": [
+      "product-summary-name"
+    ]
+  },
+  "gallery#lp": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 3,
+            "tablet": 3,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#lp",
+      "GridSummary": "product-summary.shelf#lp"
+    }
+  },
+  "product-summary.shelf#lp": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "vtex.product-highlights@2.x:product-highlights"
+/*       "product-summary-description",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "product-summary-buy-button" */
+    ]
+  },
+  "product-images#lp": {
+    "props": {
+      "showNavigationArrows": true,
+      "showPaginationDots": true,
+      "thumbnailMaxHeight": 1
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights": {
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "me salva"
+    }
+  }
+}

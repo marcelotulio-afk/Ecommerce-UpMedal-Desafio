@@ -1,0 +1,12 @@
+.container :global(.vtex-text) {
+  font-family: serif;
+  font-weight: normal;
+  color: rgb(230, 225, 225);
+}
+.backdrop {
+  background-color: rgb(43, 43, 43);
+}
+
+.triggerContainer {
+  background-color: rgb(43, 43, 43);
+}

@@ -1,0 +1,13 @@
+{
+  "store.custom#lp": {
+    "blocks": [
+      "flex-layout.row#lp"
+    ]
+  },
+
+  "flex-layout.row#lp": {
+    "children": [
+      "search-result-layout.customQuery#home"
+    ]
+  }
+}
